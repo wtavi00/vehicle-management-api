@@ -13,3 +13,15 @@ A RESTful API for managing vehicles, calculating insurance premiums based on veh
 - API documentation via Swagger UI
 
 ---
+
+## 🚀 Tech Stack
+
+| Layer       | Technology        |
+|-------------|-------------------|
+| Framework   | FastAPI           |
+| ORM         | SQLAlchemy        |
+| Validation  | Pydantic          |
+| Database    | SQLite (dev)      |
+| API Docs    | Swagger / Redoc   |
+
+---
