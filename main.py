@@ -17,3 +17,11 @@ def get_db():
         yield db
     finally:
         db.close()
+
+@app.put("/vehicles/{vehicle_id}", response_model=schemas.VehicleOut)
+def update_vehicle(vehicle_id: str, updates: VehicleUpdate, db: Session = Depends(get_db)):
+    update_data = updates.dict(exclude_unset=True)
+    updated = crud.update_vehicle(db, vehicle_id, update_data)
+    if not updated:
+        raise HTTPException(status_code=404, detail="Vehicle not found")
+    return updated
