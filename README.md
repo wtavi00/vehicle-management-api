@@ -25,3 +25,12 @@ A RESTful API for managing vehicles, calculating insurance premiums based on veh
 | API Docs    | Swagger / Redoc   |
 
 ---
+
+## 🧠 Premium Calculation Logic
+
+| Vehicle Type   | Premium Rate |
+|----------------|--------------|
+| Two Wheeler    | 2% of cost   |
+| Four Wheeler   | 6% of cost   |
+
+---
