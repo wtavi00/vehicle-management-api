@@ -25,3 +25,5 @@ def update_vehicle(vehicle_id: str, updates: VehicleUpdate, db: Session = Depend
     if not updated:
         raise HTTPException(status_code=404, detail="Vehicle not found")
     return updated
+
+@app.delete("/vehicles/{vehicle_id}")
