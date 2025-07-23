@@ -34,3 +34,15 @@ A RESTful API for managing vehicles, calculating insurance premiums based on veh
 | Four Wheeler   | 6% of cost   |
 
 ---
+
+## Project Structure
+
+vehicle_app/
+├── main.py             # FastAPI app
+├── models.py           # SQLAlchemy DB models
+├── schemas.py          # Pydantic models
+├── database.py         # DB session and setup
+└── crud.py             # DB logic (create, read, update)
+
+---
+
