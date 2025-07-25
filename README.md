@@ -36,13 +36,13 @@ A RESTful API for managing vehicles, calculating insurance premiums based on veh
 ---
 
 ## Project Structure
-
+```bash
 vehicle_app/
 ├── main.py             # FastAPI app
 ├── models.py           # SQLAlchemy DB models
 ├── schemas.py          # Pydantic models
 ├── database.py         # DB session and setup
 └── crud.py             # DB logic (create, read, update)
-
+```
 ---
 
