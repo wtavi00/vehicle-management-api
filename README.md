@@ -46,3 +46,11 @@ vehicle_app/
 ```
 ---
 
+## 📦 Installation
+
+1. **Clone the repository**
+   
+```bash
+git clone https://github.com/wtavi00/vehicle-management-api.git
+cd vehicle-management-api
+```
