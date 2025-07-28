@@ -54,3 +54,17 @@ vehicle_app/
 git clone https://github.com/wtavi00/vehicle-management-api.git
 cd vehicle-management-api
 ```
+
+2.**Create a virtual environment:**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3.**Install dependencies**
+```bash
+pip install -r requirements.txt
+Or manually:
+pip install fastapi uvicorn sqlalchemy pydantic
+```
+
