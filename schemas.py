@@ -11,3 +11,13 @@ class VehicleBase(BaseModel):
             raise ValueError("Vehicle type must be 'Two Wheeler' or 'Four Wheeler'")
         return v
 
+class VehicleCreate(VehicleBase):
+    vehicle_id: str
+
+class VehicleOut(VehicleCreate):
+    premium_amount: float
+
+class VehicleUpdate(BaseModel):
+    vehicle_type: Optional[str] = None
+    cost: Optional[float] = None
+
