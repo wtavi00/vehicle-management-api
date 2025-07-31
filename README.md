@@ -68,3 +68,6 @@ Or manually:
 pip install fastapi uvicorn sqlalchemy pydantic
 ```
 
+
+##  Example API Usage
+### POST /vehicles/
