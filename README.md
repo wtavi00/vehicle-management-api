@@ -70,6 +70,7 @@ pip install fastapi uvicorn sqlalchemy pydantic
 
 
 ##  Example API Usage
+
 ### POST /vehicles/
 {
   "vehicle_id": "V1001",
@@ -77,3 +78,8 @@ pip install fastapi uvicorn sqlalchemy pydantic
   "cost": 1000000
 }
 
+### PUT /vehicles/V1001
+{
+  "vehicle_type": "Two Wheeler",
+  "cost": 200000
+}
