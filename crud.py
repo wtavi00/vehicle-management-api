@@ -7,3 +7,6 @@ PREMIUM_RATES = {
     "Four Wheeler": 0.06
 }
 
+def calculate_premium(vehicle_type: str, cost: float) -> float:
+    return PREMIUM_RATES[vehicle_type] * cost
+
