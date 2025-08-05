@@ -21,3 +21,6 @@ class VehicleUpdate(BaseModel):
     vehicle_type: Optional[str] = None
     cost: Optional[float] = None
 
+    @validator("vehicle_type")
+    def validate_type(cls, v):
+        
