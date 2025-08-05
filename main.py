@@ -27,3 +27,5 @@ def update_vehicle(vehicle_id: str, updates: VehicleUpdate, db: Session = Depend
     return updated
 
 @app.delete("/vehicles/{vehicle_id}")
+def delete_vehicle(vehicle_id: str, db: Session = Depends(get_db)):
+    
