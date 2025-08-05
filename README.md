@@ -83,3 +83,6 @@ pip install fastapi uvicorn sqlalchemy pydantic
   "vehicle_type": "Two Wheeler",
   "cost": 200000
 }
+
+### DELETE /vehicles/V1001
+-No body required.
