@@ -28,4 +28,8 @@ def update_vehicle(vehicle_id: str, updates: VehicleUpdate, db: Session = Depend
 
 @app.delete("/vehicles/{vehicle_id}")
 def delete_vehicle(vehicle_id: str, db: Session = Depends(get_db)):
+    deleted = crud.delete_vehicle(db, vehicle_id)
+    if not deleted:
+        raise HTTPException(status_code=404, detail="Vehicle not found")
+    return {"message": f"Vehicle {vehicle_id} deleted successfully"}
     
