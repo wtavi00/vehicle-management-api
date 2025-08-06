@@ -11,6 +11,12 @@ class VehicleBase(BaseModel):
             raise ValueError("Vehicle type must be 'Two Wheeler' or 'Four Wheeler'")
         return v
 
+    @validator("cost")
+    def validate_cost(cls, v):
+        if v <= 0:
+            raise ValueError("Cost must be positive")
+        return v
+
 class VehicleCreate(VehicleBase):
     vehicle_id: str
 
@@ -23,4 +29,13 @@ class VehicleUpdate(BaseModel):
 
     @validator("vehicle_type")
     def validate_type(cls, v):
+        if v and v not in ["Two Wheeler", "Four Wheeler"]:
+            raise ValueError("Vehicle type must be 'Two Wheeler' or 'Four Wheeler'")
+        return v
+
+    @validator("cost")
+    def validate_cost(cls, v):
+        if v is not None and v <= 0:
+            raise ValueError("Cost must be positive")
+        return v
         
