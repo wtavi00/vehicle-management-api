@@ -86,3 +86,9 @@ pip install fastapi uvicorn sqlalchemy pydantic
 
 ### DELETE /vehicles/V1001
 -No body required.
+
+## Environment Configuration
+For production, consider switching to PostgreSQL:
+# database.py
+DATABASE_URL = "postgresql://username:password@localhost:5432/yourdb"
+
