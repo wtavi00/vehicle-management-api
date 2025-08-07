@@ -92,3 +92,9 @@ For production, consider switching to PostgreSQL:
 # database.py
 DATABASE_URL = "postgresql://username:password@localhost:5432/yourdb"
 
+📜 License
+MIT License. Feel free to use and modify.
+
+✨ Author
+Developed by Your Name
+
