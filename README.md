@@ -92,9 +92,8 @@ For production, consider switching to PostgreSQL:
 # database.py
 DATABASE_URL = "postgresql://username:password@localhost:5432/yourdb"
 
-📜 License
-MIT License. Feel free to use and modify.
+## ✨ Author
+[Avijit Tarafder](https://github.com/wtavi00)
 
-✨ Author
-Developed by Your Name
-
+## 📜 License
+[MIT License](https://github.com/wtavi00/vehicle-management-api/blob/main/LICENSE)
