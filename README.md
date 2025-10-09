@@ -1,8 +1,8 @@
-# vehicle-management-api
-A RESTful API for managing vehicles, calculating insurance premiums based on vehicle type and cost. Built with **FastAPI**, **SQLAlchemy**, and **Pydantic**, using **SQLite** as the backend database.
+# 🚗 Vehicle Management API
+
+A RESTful API built with **FastAPI + SQLAlchemy** for managing vehicles. Supports creating, reading, updating, and deleting vehicle records.
 
 ---
-
 ## ✅ Features
 
 - Create a vehicle record with cost and type
@@ -63,9 +63,9 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 3.**Install dependencies**
 ```bash
+git clone https://github.com/wtavi00/vehicle-management-api.git
+cd vehicle-management-api
 pip install -r requirements.txt
-Or manually:
-pip install fastapi uvicorn sqlalchemy pydantic
 ```
 
 
